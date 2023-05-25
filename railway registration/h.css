@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.img-c {
+    width: 100%;
+    margin-left: 50px;
+}
+
+
+.logo{
+    display: block;
+    margin: 0px auto;
+}
+
+.Train-col:hover{
+    box-shadow: 0 0 20px 0px rgb(12, 11, 11);
+}

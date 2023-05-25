@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <link rel="stylesheet" href="h.css">
+        
+    </head>
+    <body>
+        <style>
+            .header{
+                      min-height: 70vh;
+                      width: 100%;
+                      background-image: url("images/IMG_20230411_202848.jpg");
+                      background-position: center;
+                      background-size: cover;
+                      position: relative;
+                    }  
+            .img-c
+            {
+                text-align: center;
+            }
+            .img-logo
+            {
+                width: 150px;
+                float: left;
+                padding: 5%;
+                padding-top: 2%;
+            }
+            .wrapper
+            {
+                color: #fff;
+                font-size: 30px;
+            }
+            .img-icon
+            {
+                width: 150px;
+                float: right;
+                padding: 5%;
+                padding-top: 2%;
+                filter: invert(1);
+                background-image: linear-gradient();
+            }
+            .name
+            {
+                width: 100%;
+                min-height: 100vh;
+                padding: 5%;
+                background-position: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .search-bar
+            {
+                width: 500%;
+                max-width: 1000px;
+                background: rgba(255, 255, 255, 0.2);
+                display: flex;
+                align-items: center;
+                border-radius: 60px;
+                padding: 10px 20px;
+                backdrop-filter: blur(4px) saturate(180%);
+            }
+            .search-bar input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 24px 20px;
+                font-size: 20px;
+                color: #cac7ff;
+            }
+            ::placeholder{
+                color: #cac7ff;
+            }
+            .search-bar button img {
+                width: 25px;
+            }
+            .search-bar button {
+                border: 0;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                background: #58629b;
+                cursor: pointer;
+            }
+            /*--Train booking Details--*/
+            .Trainbook{
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                padding-top: 100px;
+            }
+            .h1{
+                font-size: 36px;
+                font-weight: 600;
+            }
+            .p{
+                color: #777;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                padding: 10px;
+            }
+            .row{
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-between;
+
+            }
+            
+            .Train-col{
+                flex-basis: 130%;
+                background: #fddede;
+                border-radius: 20px;
+                margin-bottom: 10%;
+                padding: 20px 12px;
+                box-sizing: border-box;
+                transition: 0.5s;
+            }
+            .Train-col:hover{
+                box-shadow:rgb(12, 11, 11);
+            }
+            .Trainbook IMG:hover{
+                box-shadow: 6px 6px 40px 10px rgb(12, 11, 11);
+            }
+            .nav-area
+        {
+            flex: 1;
+            text-align: right;
+        }
+        .nav-area a {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+            color: #fcf8f8;
+            text-decoration: none;
+            font-size: 13px;
+
+        }
+        .nav-area a::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .nav-area a:hover::after {
+            width: 100%;
+        }
+        .nav-area a:hover
+        {
+            text-shadow:1px -1px #767676, -1px 2px #737272;
+        }
+
+        </style>
+        
+        <div class="header">
+            <div class="nav-area">
+                <a href="index.html">INDEX</a>
+                <a href="HOME.html">HOME</a>
+                <a href="About.html">ABOUT</a>
+                <a href="Contact.html">CONTACT</a>
+                <a href="reservation.html">RESERVATION</a>
+                <a href="lo.html">LOGIN</a>
+                </div>
+           <form action="https://www.google.com/search" method="get" class="search-bar">
+            <input type="text" placeholder="search any thing" name="q">
+            <button type="submit"><img src="images/download.png"> </button>
+           </form>
+        
+            <div class="img-c">
+             <h1><i style="color: white;" ><u>INDIAN RAILWAY LOGO</u></i></h1>
+             <img class="img-logo" src="images/IMG_20230411_183606.png" alt="logo">
+             <img class="img-icon" src="images/Picsart_23-04-12_23-16-46-605.jpg" alt="icon">
+             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>   
+            <div class="wrapper">  
+              <p><i style="color: white;" >The logo has 17 stars which represent the 17 railway 
+                zones in the country. The official mascot of indian railways is an elephant named "Bholu". It is design, 
+                to commemorate the 150th anniversary of the indian railways. It is symbolic of that earlier the elephent 
+                being used to position the cartridges. Indian railway employes close to 1.54 million people, making 
+                it the seventh-largest employer in the world, according to Forbes. The correct answer is <b><i style="color: aqua;"> "Lord Dalhousie"</i></b>
+                . Lord Dalhousie served as the Governor-general of indian from 1848 to 1856. He is also to have convinced the 
+                British to introduce the railway minutes of 1853. Thus, he is regarded as the father of indian railways. .</i></p>
+            </div> 
+        </div>
+            <br><br>
+            <!--Train booking Details-->
+            <section class="Trainbook">
+                <img class="IMG" src="images/train ticket.avif">
+                    <div class="row">
+                        <div class="Train-col">
+                           <h1>How to book train ticket</h1>
+                           <p>It is extremely easy to book train tickets on IRCTC. 
+
+                            Below, we are mentioning the steps that you can follow to make your bookings quickly.<br>
+                    
+                             Step 1: Choose the source of your journey and the destination to get your train tickets 
+                             book. Select the date on which you wish to start the journey <br>
+                    
+                             Step 2: Now, you will have a list of trains based on your destination and source. You have 
+                             to choose the one you want to book tickets for. <br>
+                    
+                             Step 3: Filter and select the seat class. You can choose from a wide variety of options 
+                             such as sleeper, seater, first-class AC, second-class AC and third-class AC.<br> 
+                    
+                              Step 4: Select your boarding point. Enter the berth preferences and passenger details. 
+                              There can be multiple passengers, and you will have to enter the details of each person 
+                              separately. <br>
+                    
+                             Step 5: Enter the necessary contact details including email and mobile number as your 
+                              e-ticket and m-ticket will be sent on the registered information. <br>
+                    
+                             Step 6: Select the additional preferences. For example, you can make your bookings only 
+                             if the seats are available or you can specifically book the lower berth or window seat. <br>
+                    
+                              Step 7: Once you have filled all the above-stated details, choose the payment mode that 
+                             is most convenient for you. You can choose from a wide range of options such as debit card,
+                              credit card, net banking and UPI payments.<br> 
+                    
+                             Step 8: Enter the User ID and password of your IRCTC accounts. You will soon be redirected
+                              to the final page, and your tickets will be confirmed. Soon, you will receive your ticket
+                             on your email ID and mobile. <br>
+                    
+                             As you can see, the process is immensely easy, and it’s much better than spending hours
+                             just waiting in front of the railway ticket counter for your turn. Besides that, when you 
+                             book train tickets online, services such as PNR enquiry and live status tracking are easily
+                             accessible. If you are using GoIbibo for ticket booking, the procedure is pretty much the 
+                             same. You will notice that having a valid IRCTC account is mandatory for you to be 
+                             eligible for making your railway ticket booking on GoIbibo</p>
+                        </div>
+                    </div>
+            </section>
+            <!--javascript for toggle menu-->
+        <script>
+            var navLinks= document.getElementById("navLinks");
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link rel="stylesheet" href="ab.css">
+       
+    </head>
+<body>
+    <style>
+         .nav-area
+        {
+            flex: 1;
+            text-align: right;
+        }
+        .nav-area a {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+            color: #faf5f5;
+            text-decoration: none;
+            font-size: 13px;
+
+        }
+        .nav-area a::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .nav-area a:hover::after {
+            width: 100%;
+        }
+        .nav-area a:hover
+        {
+            text-shadow:1px -1px #767676, -1px 2px #737272;
+        }
+        .trainimages {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+            text-transform: uppercase;
+        }
+        
+    </style>
+
+    <section class="header">
+        <div class="nav-area">
+            <a href="index.html">INDEX</a>
+            <a href="HOME.html">HOME</a>
+            <a href="About.html">ABOUT</a>
+            <a href="Contact.html">CONTACT</a>
+            <a href="lo.html">LOGIN</a>
+            <a href="reservation.html">RESERVATION</a>
+        </div>
+        <div class="guna">
+            <div class="text-box">
+                <h1>ABOUT</h1>
+            </div>
+            <div class="text-p">
+                <p> Indian Railways (IR) is a statutory body under the ownership of the Ministry of Railways, 
+                    Government of India that operates India's national railway system.[8] It manages the fourth largest 
+                    national railway system in the world by size, with a total route length of 68,043 km (42,280 mi),
+                     running track length of 102,831 km (63,896 mi) and track length of 128,305 km (79,725 mi) as of 31 March 
+                     2022. 50,394 km (31,313 mi) of all the gauge routes are electrified with 25 kV 50 Hz AC 
+                     electric traction as of 1 April 2022.</p>
+            </div>
+        </div>
+           
+    </section>
+    <br><br>
+    <section class="trainimages">
+        <h1>railway station images</h1>
+        <p>A Train is a series of connected vehicles that run along a railway track and transport people or freight</p>
+        <br>
+        <div class="row">
+            <div class="trainimages-col">
+                <img src="images/london train.jpeg" width="250px" height="1000px">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="trainimages-col">
+                <img src="images/new yark train.jpeg" >
+                <div class="layer">
+                    <h3>NEW YARK</h3>
+                </div>
+            </div>
+            <div class="trainimages-col">
+                <img src="images/american train.jpeg" >
+                <div class="layer">
+                    <h3>AMERICAN</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
